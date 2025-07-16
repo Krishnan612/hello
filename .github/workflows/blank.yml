@@ -9,9 +9,8 @@ on:
       branches: [main, protected]
    pull_request:
       branches: [main]
-      paths-ignore:
-         - '**/*.md'
-         - '**/*.txt'
+   schedule:
+      - cron: '20 14 * * 1'
   # Allows you to run this workflow manually from the Actions tab
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
